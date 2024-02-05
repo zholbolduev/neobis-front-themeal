@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../widgets/Header/Header";
-import "./DetailsFood.scss";
+import "./DetailsFoodPage.scss";
 import { useParams } from "react-router";
 import axios from "axios";
 import { idAPI } from "../../shared/BaseAPI";

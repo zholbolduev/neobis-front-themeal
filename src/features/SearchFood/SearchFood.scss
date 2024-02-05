@@ -1,5 +1,10 @@
-.search {
-  h2 {
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Raleway:wght@100;200;300&display=swap");
+
+.searchPost {
+  padding: 60px 30px;
+}
+.searchPost {
+  &--h2 {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -12,8 +17,7 @@
     margin-top: 10px;
     text-align: center;
   }
-
-  form {
+  &__form {
     align-items: center;
     display: flex;
     height: 46px;
@@ -59,6 +63,45 @@
       position: absolute;
       right: 0;
       width: 100px;
+    }
+  }
+}
+
+.searchView {
+  &__infoBlock {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    > img {
+      border-radius: 4px;
+      flex-basis: 20%;
+      width: 100%;
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+
+    &__text {
+      > h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: Raleway;
+      }
+
+      > p {
+        font-family: Raleway;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
     }
   }
 }
