@@ -1,11 +1,13 @@
 import React from "react";
 import "./Header.scss";
-import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const navigate = useNavigate();
-
-  return <header onClick={() => navigate("/home")}>The Meal</header>;
+  return (
+    <header>
+      <Link to={"/"}> The Meal</Link>
+    </header>
+  );
 };
 
 export default Header;
