@@ -1,8 +1,8 @@
 import React from "react";
-import "./Header.scss";
+import "./HeaderWidgets.scss";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const HeaderWidgets = () => {
   return (
     <header>
       <Link to={"/"}> The Meal</Link>
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderWidgets;

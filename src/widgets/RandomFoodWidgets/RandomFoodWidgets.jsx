@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from "react";
-import "./RandomFood.scss";
-import axios from "axios";
-import { randomAPI } from "../../shared/BaseAPI";
+import "./RandomFoodWidgets.scss";
 import { Link } from "react-router-dom";
+import { getRandomMeal } from "./RandomFoodWidgetsAction";
 
-const RandomFood = () => {
+const RandomFoodWidgets = () => {
   const [meal, setMeal] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(randomAPI)
-      .then((data) => {
-        console.log(data.data.meals[0]);
-        setMeal(data.data.meals[0]);
-      })
-      .catch((error) => {
-        console.error("Error", error);
-      });
+    const fetchRandomMeal = async () => {
+      const randomMeal = await getRandomMeal();
+      setMeal(randomMeal);
+    };
+    fetchRandomMeal();
   }, []);
 
   return (
@@ -42,4 +37,4 @@ const RandomFood = () => {
   );
 };
 
-export default RandomFood;
+export default RandomFoodWidgets;
