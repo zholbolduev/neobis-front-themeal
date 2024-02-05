@@ -1,0 +1,64 @@
+.search {
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+    margin: 0 auto 40px;
+    position: relative;
+    width: 360px;
+
+    > input {
+      background-color: #dcdcdc;
+      border: none;
+      border-radius: 3px;
+      font-family: Raleway;
+      height: 100%;
+      outline: none;
+      padding-left: 16px;
+      transition: all 0.15s;
+      width: 100%;
+    }
+    > input[type="tel" i] {
+      direction: ltr;
+      padding-block: 1px;
+      padding-inline: 2px;
+    }
+
+    > input:not(
+        [type="file" i],
+        [type="image" i],
+        [type="checkbox" i],
+        [type="radio" i]
+      ) {
+    }
+
+    > button {
+      background: #d49726;
+      border: 0;
+      border-radius: 0 3px 3px 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: Raleway;
+      font-weight: 700;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      width: 100px;
+    }
+  }
+}

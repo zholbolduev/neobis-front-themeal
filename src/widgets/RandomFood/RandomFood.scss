@@ -1,0 +1,61 @@
+.randomMeal {
+  padding: 60px 30px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex-basis: 50%;
+    text-align: center;
+
+    &--head {
+      font-size: 30px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      text-align: center;
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    &--name {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      color: #d49726;
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      line-height: 58px;
+    }
+
+    &--country {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  }
+
+  &__imgBlock {
+    flex-basis: 50%;
+    text-align: center;
+
+    > img {
+      border-radius: 8px;
+      box-shadow: 10px 12px 29px -14px rgba(0, 0, 0, 0.75);
+      object-fit: cover;
+      width: 70%;
+    }
+  }
+}
